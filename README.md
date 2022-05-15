@@ -31,3 +31,37 @@ You'll find schematics and also a KiCad PCB design project in the [pcb](/pcb/) f
 ![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
 ![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
 ![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
+
+## Wiring the FloppyEmu
+The FloppyEmu PCB does not provide convenient pins or solder pads to tap the button and LED status signals. However, it's still relatively easy to tap the required signals - as shown by these photos. The photos apply to the Revision C model of the BMOW FloppyEmu. For other revisions, better verify the wiring with a multimeter.
+
+A single wire is enough for each push button is enough: all four push buttons, including the reset button, connect to common ground. The status LED, however, does not connect to ground: it's wired between the status output signal and +5V (via an appropriate resistor for the LED, of course). The only feasible place is to solder directly next to the LED. The status signal is on the right of the LED – as shown. Be careful when soldering – just touch the LED very briefly with the iron – otherwise the onboard LED will die.
+
+![Wiring1](/resources/Wiring1.jpg?raw=true)
+
+You can wire the ground lead (common for all push buttons) and the 5V (for the status LED) to the unpopulated debug connector in the middle of the FloppyEmu PCB. I soldered these two on the PCB’s bottom side, so they are almost “invisible” once the PCB is installed.
+
+![Wiring2](/resources/Wiring2.jpg?raw=true)
+
+I suggest you solder all wires to a 2x5 pin header (or boxed header), so you can use a neat ribbon cable with plugs to connect the front button panel. The ribbon cable connects all four button signals, the status signal, ground and 5V – so three pins remain unused. If you wanted a power LED – just connect between ground and 5V (via a resistor, of course). See the schematics in the [pcb](/pcb) folder for a suggested pin assignment of the pin header/ribbon cable.
+
+![Wiring3](/resources/Wiring3.jpg?raw=true)
+
+## 3D Print
+3D printing is straight forward. The top shell is printed upside down:
+![3DPrint1](/resources/3D_Print1.jpg?raw=true)
+
+Afterwards, carefully remove the printed "supports" to reveal the top grooves:
+![3DPrint2](/resources/3D_Print2.jpg?raw=true)
+
+The top shell and the base plate should be glued together. Make sure to completely cover the seam between these two elements, since these two parts were split for easier 3D printing, and the original Disk II does have different seams. Smoothing these seams (before applying beige "Apple II"-like paint) comepletely hides the seam. Glueing these two parts also provides extra strength: there should be no more wobble or flexing once the two parts are glued.
+![3DPrint3](/resources/3D_Print3.jpg?raw=true)
+
+## Assembly
+Once the PCB is attached to the front panel, the whole assembly slides into the front of the 3D-printed shell. The PCB, the front and the rear panel are fixed with screws from the bottom of the shell.
+![Assembly1](/resources/Assembly1.jpg?raw=true)
+![Assembly2](/resources/Assembly2.jpg?raw=true)
+![Assembly4](/resources/Assembly4.jpg?raw=true)
+
+Remember: it's not complete - without rubber feet:
+![Assembly5](/resources/Assembly5.jpg?raw=true)
