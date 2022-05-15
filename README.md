@@ -21,4 +21,4 @@ You'll find schematics and also a KiCad PCB design project in the [pcb](/pcb/) f
 
 ![ButtonPanel1](/resources/ButtonPanel1.png?raw=true)
 ![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
-![ButtonPanel3](/resources/ButtonPanel3.png?raw=true)
+![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
