@@ -1,11 +1,19 @@
 # FloppyEmuDiskIIEnclosure
-Project to create an 3D-printed custom enclosure for the "Big Mess of Wires" FloppyEmu (a SD card disk drive emulator for the Apple II). The custom enclosure is shaped like Apple's historic "Disk II" drive, which Apple introduced in 1978.
+Project to create a 3D-printed custom enclosure for the "Big Mess of Wires" FloppyEmu (a SD card based disk drive emulator for the Apple II computer). The custom enclosure is shaped like Apple's historic "Disk II" drive, the first ever disk drive introduced by Apple in 1978.
 
 ## Description
 This project contains SCAD design files & STL files, stickers, KiCad PCB design, to create a 3D printed enclosure for a [FloppyEmu](https://www.bigmessowires.com/floppy-emu/). The enclosure is like the historic "Disk II" drive, which Apple introduced in 1978 for the Apple II.
 
 ![Final1](/resources/Final1.jpg?raw=true)
 ![Final2](/resources/Final2.jpg?raw=true)
+
+## Credits
+The idea for this 3D-printing project was triggered by similar ideas to create Disk II-shaped custom enclosures for the FloppyEmu in the [AppleFritter](http://www.applefritter.com) forum - a forum for vintage Apple computer fans. See [this discussion thread](https://www.applefritter.com/content/yet-another-floppyemu-enclosure-3d-printing-approach) for more.
+
+## License
+This project is released under the CreativeCommons License. See [LICENSE](/LICENSE).
+
+The Apple logo is a registered trademark and copyright by Apple Computer Inc. Any images and photos which may show the Disk II-FloppyEmu enclosure with an Apple logo were only given as an example of how you could decorate your Disk II-FloppyEmu drive enclosure for your personal use. The 3D-printed Disk II FloppyEmu enclosure is not endorsed by Apple. This project does not grant you any rights or licenses to distribute any Disk II enclosures with an Apple logo.
 
 ## Design
 The 3D design is done with OpenSCAD. All files are available in the [scad](/scad/) folder. SCAD provides
