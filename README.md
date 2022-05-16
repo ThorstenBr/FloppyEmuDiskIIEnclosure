@@ -1,8 +1,5 @@
-# FloppyEmuDiskIIEnclosure
-Project to create a 3D-printed custom enclosure for the "Big Mess of Wires" FloppyEmu (a SD card based disk drive emulator for the Apple II computer). The custom enclosure is shaped like Apple's historic "Disk II" drive, the first ever disk drive introduced by Apple in 1978.
-
-## Description
-This project contains SCAD design files & STL files, stickers, KiCad PCB design, to create a 3D printed enclosure for a [FloppyEmu](https://www.bigmessowires.com/floppy-emu/). The enclosure is a look-alike of the historic and hugely successful "Disk II" drive, which Apple introduced in 1978 for the Apple II computer.
+# FloppyEmu DiskII Enclosure
+This project contains OpenSCAD files, STL files, stickers and KiCad PCB to create a 3D-printed custom enclosure for the [Big Mess of Wires - FloppyEmu](https://www.bigmessowires.com/floppy-emu/) - an SD-card based disk drive emulator for the Apple II computer. The custom enclosure is a look-alike of Apple's historic "Disk II" drive, the first ever and hugely successful original disk drive, introduced by Apple in 1978.
 
 ![Final1](/resources/Final1.jpg?raw=true)
 ![Final2](/resources/Final2.jpg?raw=true)
