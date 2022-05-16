@@ -16,8 +16,12 @@ This project is released under the CreativeCommons License. See [LICENSE](/LICEN
 The Apple logo is a registered trademark and copyright by Apple Computer Inc. Any images and photos which may show the Disk II-FloppyEmu enclosure with an Apple logo were only given as an example of how you could decorate your Disk II-FloppyEmu drive enclosure for your personal use. The 3D-printed Disk II FloppyEmu enclosure is not endorsed by Apple. This project does not grant you any rights or licenses to distribute any Disk II enclosures with an Apple logo.
 
 ## Design
-The 3D design is done with OpenSCAD. All files are available in the [scad](/scad/) folder. SCAD provides
-You can also find a number of ready-to-use STL files in the [stl](/stl/) folder.
+The 3D design is done with OpenSCAD. All files are available in the [scad](/scad/) folder.
+
+The OpenSCAD file provides an option to generate the enclosure in different sizes. The minimum scale to fit the FloppyEmu PCB is 0.6 (= 60% of the original Disk II enclosure size). Currently, this reduced size is the only variant which is tested. The photos of the enclosure also show this reduced variant. Larger sizes will still require some tweaking in the SCAD files. The full-sized variant will be supported in the future (wait for it...).
+You can also choose whether to use one LED (status LED only), or two LEDs (status + power LED). One LED is the default.
+
+You can also find a ready-to-use STL files in the [stl](/stl/) folder. These STL files apply to the tested variant (60% of the original, one LED).
 
 ![3D-Design2](/resources/3D_Design2.png?raw=true)
 ![3D-Design4](/resources/3D_Design4.png?raw=true)
@@ -51,20 +55,40 @@ I suggest you solder all wires to a 2x5 pin header (or boxed header), so you can
 ![Wiring3](/resources/Wiring3.jpg?raw=true)
 
 ## 3D Print
-3D printing is straight forward. The top shell is printed upside down:
+3D printing is straight forward. The models are optimized to reduce 3D "supports". Most overhangs are designed, so most 3D printers will be able to print these without supports. The large grooves on the top shell do require supports though - since this model should be printed upside down:
+
 ![3DPrint1](/resources/3D_Print1.jpg?raw=true)
 
-Afterwards, carefully remove the printed "supports" to reveal the top grooves:
+Carefully remove the printed "supports" to reveal the top grooves:
+
 ![3DPrint2](/resources/3D_Print2.jpg?raw=true)
 
-The top shell and the base plate should be glued together. Make sure to completely cover the seam between these two elements, since these two parts were split for easier 3D printing, and the original Disk II does have different seams. Smoothing these seams (before applying beige "Apple II"-like paint) comepletely hides the seam. Glueing these two parts also provides extra strength: there should be no more wobble or flexing once the two parts are glued.
-![3DPrint3](/resources/3D_Print3.jpg?raw=true)
+
+### Print Duration
+The top shell takes about 7 hours to print on an Ender 3v2. The front and rear panel require about 1:15 hours. The buttons and mounting brackets require a few minutes only.
 
 ## Assembly
-Once the PCB is attached to the front panel, the whole assembly slides into the front of the 3D-printed shell. The PCB, the front and the rear panel are fixed with screws from the bottom of the shell.
+
+### Shell
+The top shell and the base plate should be glued together. Make sure to completely cover the seam between these two elements, since these two parts were split for easier 3D printing, and the original Disk II does have different seams. Smoothing these seams (before applying beige "Apple II"-like paint) comepletely hides the seam. Glueing these two parts also provides extra strength: there should be no more wobble or flexing once the two parts are glued.
+
+![3DPrint3](/resources/3D_Print3.jpg?raw=true)
+
+### Front Panel
+The PCB is directly attached to the front panel with two screws. The rear of the PCB is screwed to the printed mounting bracket ("PCB feet"). The LCD display is clipped into the front panel. The pegs should exactly fit to the original FloppyEmu LCD. If necessary, use glue to prevent the LCD from slipping from the little pegs (this should normally not be necessary though, if you do not clip and remove the LCD from the front panel too often).
+
+Use a ribbon cable to connect the LCD to the original connector on the FloppyEmu PCB (make sure to twist the connector!). Depending on the connector plugs, you may need to slightly bend the pins on the LCD, so they are angled 10-20° downward (may be necessary if the plug is too high and touches the top of the shell).
+
 ![Assembly1](/resources/Assembly1.jpg?raw=true)
+
+Eventually, when everything is connected, the whole assembly slides into the front of the 3D-printed shell.
+
 ![Assembly2](/resources/Assembly2.jpg?raw=true)
+
+The PCB, the front and the rear panel are fixed with screws from the bottom of the shell.
+
 ![Assembly4](/resources/Assembly4.jpg?raw=true)
 
-Remember: it's not complete - without rubber feet:
+It's almost done! But remember: it's not complete... without rubber feet... :)
+
 ![Assembly5](/resources/Assembly5.jpg?raw=true)
