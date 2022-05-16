@@ -189,9 +189,7 @@ module main()
 		if (part != "noFront") makeFront();
 	}
 	else
-	if (part == "prototype") {
-		boxScrewPosts();
-	} else {
+	{
 		// nothing!
 	}
 	if ((showPcb == "yes")&&(part != "button")) makePcb();

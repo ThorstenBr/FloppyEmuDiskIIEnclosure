@@ -2,13 +2,13 @@
 // brehmt (at) gmail dot com
 
 // Which part do you want to see/generate?
-PART = "bottom"; // [all:All, noRear:No Rear, noFront:No Front, noBottom: No Bottom, frontBottom: Front and Bottom, topBottom: Top and Bottom, bottom:Bottom only,top:Top only,rear:Rear only,front:Front only, button:Buttons and Fittings,prototype:Prototype,test:Test]
+PART = "bottom"; // [button:Buttons and Brackets, bottom:Base board element, top:Top shell, rear:Rear panel, front:Front panel, test:--Test--, all:All elements, noRear:All except the rear panel, noFront:All except front panel, noBottom: All except base board, frontBottom: Front and base board only, topBottom: Top shell and base board only]
 
 // Size of the LCD display?
 LCD = "yes"; // [small:Original 1.7inch display, large:Custom large 2.42inch display]
 
 // show FloppyEmu PCB?
-PCB = "yes"; // [no:No,yes:Yes]
+PCB = "no"; // [no:No,yes:Yes]
 
 // Size of the box: 1.0=original Disk II drive size, 0.6='baby box', just matching floppy EMU size
 SCALING = 0.6; // [0.1 : 0.01 : 1]
