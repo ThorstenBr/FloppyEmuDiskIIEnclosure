@@ -80,9 +80,11 @@ The push buttons only travel 0.25mm when depressed.
 If the PCB was slightly warped or the buttons are soldered unevenly, slightly adjust the distance between the PCB and the front-panel.
 Just unscrewing one of the four screws to release a bit of pressure may already be enough.
 
-The LCD display is clipped into the front panel. The pegs should exactly fit to the original FloppyEmu LCD. If necessary, use glue to prevent the LCD from slipping from the little pegs (this should normally not be necessary though, if you do not clip and remove the LCD from the front panel too often).
+The LCD display is clipped into the front panel. The pegs should exactly fit to the original FloppyEmu LCD.
+If necessary, use glue to prevent the LCD from slipping from the little pegs (this should normally not be necessary though, if you do not clip and remove the LCD from the front panel too often).
 
-Use a ribbon cable to connect the LCD to the original connector on the FloppyEmu PCB (make sure to twist the connector!). Depending on the connector plugs, you may need to slightly bend the pins on the LCD, so they are angled 10-20° downward (may be necessary if the plug is too high and touches the top of the shell).
+Use a ribbon cable to connect the LCD to the original connector on the FloppyEmu PCB (make sure to connect the cable with the correct orientation!).
+Depending on the connector plugs, you may need to slightly bend the pins on the LCD, so they are angled 10-20° downward (may be necessary if the plug is too high and touches the top of the shell).
 
 ![Assembly1](/resources/Assembly1.jpg?raw=true)
 
