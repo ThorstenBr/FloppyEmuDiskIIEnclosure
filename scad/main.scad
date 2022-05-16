@@ -18,7 +18,7 @@ LEDs = "one"; // [one:One / Activity LED,two:Both / Activity and Power LEDs]
 
 /* [Internals] */
 // Base board imprint
-IMPRINT = "MADE IN GERMANY";  // 20
+IMPRINT = "MADE IN GERMANY";  // 30
 
 // Distance of the components (when showing 'exploded' elements)
 SEPARATION = 30; // [0: 1: 100]
