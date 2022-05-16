@@ -1,0 +1,301 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "FloppyEmu Button Panel"
+Date "2022-05-06"
+Rev "1.0"
+Comp "Thorsten Brehm"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW1
+U 1 1 62744C78
+P 3250 2950
+F 0 "SW1" H 3250 3235 50  0000 C CNN
+F 1 "PREVIOUS/UP" H 3350 3150 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h5mm" H 3250 3150 50  0001 C CNN
+F 3 "~" H 3250 3150 50  0001 C CNN
+	1    3250 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 62744E61
+P 3250 3500
+F 0 "SW2" H 3250 3785 50  0000 C CNN
+F 1 "SELECT" H 3250 3694 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h5mm" H 3250 3700 50  0001 C CNN
+F 3 "~" H 3250 3700 50  0001 C CNN
+	1    3250 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 62745058
+P 3250 4050
+F 0 "SW3" H 3250 4335 50  0000 C CNN
+F 1 "NEXT/DOWN" H 3200 4250 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h5mm" H 3250 4250 50  0001 C CNN
+F 3 "~" H 3250 4250 50  0001 C CNN
+	1    3250 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 62745342
+P 4100 2950
+F 0 "SW4" H 4100 3235 50  0000 C CNN
+F 1 "RESET" H 4100 3144 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_PUSH_6mm_h5mm" H 4100 3150 50  0001 C CNN
+F 3 "~" H 4100 3150 50  0001 C CNN
+	1    4100 2950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3050 3500
+Wire Wire Line
+	3050 3500 3050 4050
+Connection ~ 3050 4050
+$Comp
+L power:GND #PWR0101
+U 1 1 62745E25
+P 4400 4800
+F 0 "#PWR0101" H 4400 4550 50  0001 C CNN
+F 1 "GND" H 4405 4627 50  0000 C CNN
+F 2 "" H 4400 4800 50  0001 C CNN
+F 3 "" H 4400 4800 50  0001 C CNN
+	1    4400 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 4050 3050 4750
+Wire Wire Line
+	3050 2950 3050 3500
+Wire Wire Line
+	3900 2950 3900 2500
+Wire Wire Line
+	3900 2500 3050 2500
+Wire Wire Line
+	3050 2500 3050 2950
+Connection ~ 3050 2950
+$Comp
+L power:+5V #PWR0102
+U 1 1 62749BF1
+P 4700 3550
+F 0 "#PWR0102" H 4700 3400 50  0001 C CNN
+F 1 "+5V" H 4715 3723 50  0000 C CNN
+F 2 "" H 4700 3550 50  0001 C CNN
+F 3 "" H 4700 3550 50  0001 C CNN
+	1    4700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6274AF14
+P 5400 2700
+F 0 "R1" H 5470 2746 50  0000 L CNN
+F 1 "1K" H 5470 2655 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5330 2700 50  0001 C CNN
+F 3 "~" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 6274B5B6
+P 5400 3000
+F 0 "D1" V 5400 3150 50  0000 R CNN
+F 1 "STATUS LED" V 5500 3450 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 5400 3000 50  0001 C CNN
+F 3 "~" H 5400 3000 50  0001 C CNN
+	1    5400 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 6274BC05
+P 5400 2550
+F 0 "#PWR0103" H 5400 2400 50  0001 C CNN
+F 1 "+5V" H 5415 2723 50  0000 C CNN
+F 2 "" H 5400 2550 50  0001 C CNN
+F 3 "" H 5400 2550 50  0001 C CNN
+	1    5400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 6274C215
+P 6150 3000
+F 0 "D2" V 6189 2882 50  0000 R CNN
+F 1 "POWER LED" V 6098 2882 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 6150 3000 50  0001 C CNN
+F 3 "~" H 6150 3000 50  0001 C CNN
+	1    6150 3000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6274C43F
+P 6150 2700
+F 0 "R2" H 6220 2746 50  0000 L CNN
+F 1 "1K" H 6220 2655 50  0000 L CNN
+F 2 "Resistors_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 6080 2700 50  0001 C CNN
+F 3 "~" H 6150 2700 50  0001 C CNN
+	1    6150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6274C5DE
+P 6150 3150
+F 0 "#PWR0104" H 6150 2900 50  0001 C CNN
+F 1 "GND" H 6155 2977 50  0000 C CNN
+F 2 "" H 6150 3150 50  0001 C CNN
+F 3 "" H 6150 3150 50  0001 C CNN
+	1    6150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 6274C996
+P 6150 2550
+F 0 "#PWR0105" H 6150 2400 50  0001 C CNN
+F 1 "+5V" H 6165 2723 50  0000 C CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2800 5250 7100 5250
+Wire Notes Line
+	7100 5250 7100 2000
+Wire Notes Line
+	7100 2000 2800 2000
+Wire Notes Line
+	2800 2000 2800 5250
+Wire Wire Line
+	3450 3500 4300 3500
+Text Label 4400 3950 1    50   ~ 0
+PREVIOUS
+Wire Wire Line
+	4300 2950 4500 2950
+Wire Wire Line
+	3500 2950 3500 3250
+Wire Wire Line
+	3500 3250 4400 3250
+Wire Wire Line
+	3500 2950 3450 2950
+Wire Wire Line
+	3450 4050 3500 4050
+Wire Wire Line
+	3500 4050 3500 4600
+Text Label 4300 3950 1    50   ~ 0
+SELECT
+Text Label 4050 4600 0    50   ~ 0
+NEXT
+Text Label 4050 4750 0    50   ~ 0
+GND
+Text Label 4500 3950 1    50   ~ 0
+RESET
+Text Label 4700 3950 1    50   ~ 0
+POWER
+Wire Wire Line
+	4600 3150 5400 3150
+Text Label 4600 3950 1    50   ~ 0
+STATUS
+NoConn ~ 4500 4550
+NoConn ~ 4600 4550
+NoConn ~ 4700 4550
+Wire Wire Line
+	4400 4550 4400 4750
+Wire Wire Line
+	3500 4600 4300 4600
+Connection ~ 4400 4750
+Wire Wire Line
+	4400 4750 4400 4800
+Wire Wire Line
+	3050 4750 4400 4750
+Wire Wire Line
+	4700 3550 4700 4050
+Wire Wire Line
+	4600 3150 4600 4050
+Wire Wire Line
+	4500 2950 4500 4050
+Wire Wire Line
+	4400 3250 4400 4050
+Wire Wire Line
+	4300 3500 4300 4050
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 62826E2B
+P 4500 4350
+F 0 "J1" V 4596 4062 50  0000 R CNN
+F 1 "ButtonPanel" V 4505 4062 50  0000 R CNN
+F 2 "ThorstensFootprints:Box_Header_2x05x2.54mm_Straight" H 4500 4350 50  0001 C CNN
+F 3 "~" H 4500 4350 50  0001 C CNN
+	1    4500 4350
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4300 4600 4300 4550
+Wire Notes Line
+	6850 2200 6850 3450
+Wire Notes Line
+	6850 3450 5750 3450
+Wire Notes Line
+	5750 3450 5750 2200
+Wire Notes Line
+	5750 2200 6850 2200
+Text Notes 5800 2300 0    50   ~ 0
+Power LED is optional
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 6283AD76
+P 2950 2150
+F 0 "H2" H 3050 2196 50  0000 L CNN
+F 1 "MountingHole" H 3050 2105 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 2950 2150 50  0001 C CNN
+F 3 "~" H 2950 2150 50  0001 C CNN
+	1    2950 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 6283B185
+P 7000 2100
+F 0 "H3" H 7100 2146 50  0000 L CNN
+F 1 "MountingHole" H 7100 2055 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 2100 50  0001 C CNN
+F 3 "~" H 7000 2100 50  0001 C CNN
+	1    7000 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6283B47E
+P 7000 5150
+F 0 "H4" H 7100 5196 50  0000 L CNN
+F 1 "MountingHole" H 7100 5105 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 5150 50  0001 C CNN
+F 3 "~" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 6283B6E3
+P 2900 5150
+F 0 "H1" H 3000 5196 50  0000 L CNN
+F 1 "MountingHole" H 3000 5105 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 2900 5150 50  0001 C CNN
+F 3 "~" H 2900 5150 50  0001 C CNN
+	1    2900 5150
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

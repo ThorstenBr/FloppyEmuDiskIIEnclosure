@@ -31,6 +31,7 @@ You'll find schematics and also a KiCad PCB design project in the [pcb](/pcb/) f
 ![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
 ![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
 ![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
+![PCB](/resources/PCB.png?raw=true)
 
 ## Wiring the FloppyEmu
 The FloppyEmu PCB does not provide convenient pins or solder pads to tap the button and LED status signals. However, it's still relatively easy to tap the required signals - as shown by these photos. The photos apply to the Revision C model of the BMOW FloppyEmu. For other revisions, better verify the wiring with a multimeter.
