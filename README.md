@@ -27,13 +27,15 @@ You can also find a number of ready-to-use STL files in the [stl](/stl/) folder.
 You will also need a button panel, so you can control FloppyEmu from the front panel. You can create the panel using a perfboard - or use the PCB design files to order a printed circuit board.
 You'll find schematics and also a KiCad PCB design project in the [pcb](/pcb/) folder.
 
+The four push buttons are very common and easy to obtain. They are similar as the onboard buttons of FloppyEmu. Except the PCB design is made for a through-hole type push buttons (not SMD buttons as on FloppyEmu). And you will need switches with a 7mm peg, to properly mount the printed push button caps. Check on ebay searching for "micro switch push button 6x6x7mm". Your favourite electronics supplier should also have them (Germany: reichelt.de, TASTER 9303, Kurzhubtaster 6x6mm, 7,0mm).
+
 ![ButtonPanel1](/resources/ButtonPanel1.png?raw=true)
 ![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
 ![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
 ![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
 ![PCB](/resources/PCB.png?raw=true)
 
-## Wiring the FloppyEmu
+## Wiring FloppyEmu
 The FloppyEmu PCB does not provide convenient pins or solder pads to tap the button and LED status signals. However, it's still relatively easy to tap the required signals - as shown by these photos. The photos apply to the Revision C model of the BMOW FloppyEmu. For other revisions, better verify the wiring with a multimeter.
 
 A single wire is enough for each push button is enough: all four push buttons, including the reset button, connect to common ground. The status LED, however, does not connect to ground: it's wired between the status output signal and +5V (via an appropriate resistor for the LED, of course). The only feasible place is to solder directly next to the LED. The status signal is on the right of the LED – as shown. Be careful when soldering – just touch the LED very briefly with the iron – otherwise the onboard LED will die.
