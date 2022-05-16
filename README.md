@@ -10,7 +10,7 @@ The idea for this 3D-printing project was triggered by similar ideas to create D
 ## License
 This project is released under the CreativeCommons License. See [LICENSE](/LICENSE).
 
-The Apple logo is a registered trademark and copyright by Apple Computer Inc. Any images and photos which may show the Disk II-FloppyEmu enclosure with an Apple logo were only given as an example of how you could decorate your Disk II-FloppyEmu drive enclosure for your personal use. The 3D-printed Disk II FloppyEmu enclosure is not endorsed by Apple. This project does not grant you any rights or licenses to distribute any Disk II enclosures with an Apple logo.
+The Apple logo is a registered trademark and copyright by Apple Computer Inc. Any images and photos which may show the Disk II-FloppyEmu enclosure with an Apple logo were only given as an example of how you could decorate your Disk II-FloppyEmu drive enclosure for your personal use, to match the retro look of your wonderful original Apple II computer. The 3D-printed Disk II FloppyEmu enclosure is not endorsed by Apple. This project does not grant you any rights or licenses to distribute any 3D-printed enclosures with an Apple logo.
 
 ## Design
 The 3D design is done with OpenSCAD. All files are available in the [scad](/scad/) folder.
