@@ -86,6 +86,12 @@ The PCB, the front and the rear panel are fixed with screws from the bottom of t
 
 ![Assembly4](/resources/Assembly4.jpg?raw=true)
 
-It's almost done! But remember: it's not complete... without rubber feet... :)
+Once the PCB/front-panel is installed, connect the disk drive ribbon cable and finally attach the rear panel - with two screws from the bottom.
+
+![Assembly3](/resources/Assembly3.jpg?raw=true)
+
+Almost done!
+
+But remember: it's not complete... without rubber feet... :)
 
 ![Assembly5](/resources/Assembly5.jpg?raw=true)
