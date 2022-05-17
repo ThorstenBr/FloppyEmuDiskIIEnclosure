@@ -36,7 +36,8 @@ The four push buttons are very common and easy to obtain. They are similar as th
 ![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
 ![PCB](/resources/PCB.png?raw=true)
 
-The pcb folder also contains Gerber files:
+The pcb folder also contains Gerber files, if you wanted to order a PCB directly:
+
 ![PCB](/resources/PCB2.png?raw=true)
 ![PCB](/resources/PCB3.png?raw=true)
 
