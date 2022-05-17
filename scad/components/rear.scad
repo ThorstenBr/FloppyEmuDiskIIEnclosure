@@ -43,16 +43,6 @@ module makeRear()
 	translate([BoxX_Width-FrontGapX/2, SKIN , BoxZ_Depth-RearWallZOffset-RearWallZLedge/2]) rotate([270, 0, 0])
 		screwPost(ScrewPostHeight, ScrewPostDiameter, ScrewDiameter, ScrewPostHeight, ScrewPostFillet);
 
-	// cable strain relief
-	translate([BoxX_Width-RearWallGap-RearWallCableGapXOffset+ScrewPostDiameter, BoxY_Height-CableStrainReliefYOffset, BoxZ_Depth-RearWallZOffset-SKIN])
-		rotate([180,0,0]) screwPost(ScrewPostHeight, ScrewPostDiameter, ScrewDiameter, ScrewPostHeight, ScrewPostFillet);
-	translate([BoxX_Width-RearWallGap-RearWallCableGapXOffset-RearWallCableGapWidth, BoxY_Height-CableStrainReliefYOffset, BoxZ_Depth-RearWallZOffset-SKIN])
-		rotate([180,0,0]) screwPost(ScrewPostHeight, ScrewPostDiameter, ScrewDiameter, ScrewPostHeight, ScrewPostFillet);
-	StrainReliefHeight=2;
-	CableThickness = 0;
-	translate([BoxX_Width-RearWallGap-RearWallCableGapXOffset-RearWallCableGapWidth+ScrewPostDiameter/2, BoxY_Height-CableStrainReliefYOffset-StrainReliefHeight/2, BoxZ_Depth-RearWallZOffset-SKIN-ScrewPostHeight+CableThickness])
-		cube([RearWallCableGapWidth, StrainReliefHeight, ScrewPostHeight-CableThickness]); // 0.5mm to allow a bit space for the cable
-
 	// support triangles for stability
 	SupportWidth = RearWallZLedge-SKIN*2;
 	// left
@@ -66,26 +56,3 @@ module makeRear()
 		rotate([270, 180, 0]) prism(SKIN, SupportWidth, SupportWidth);
 }
 
-module makeCableStrainRelief()
-{
-	StrainReliefHeight=4+SKIN;
-
-	difference()
-	{
-		union()
-		{
-			// cable strain relief
-			translate([ScrewPostDiameter, 0, 0])
-				rotate([180,0,0]) screwPost(StrainReliefHeight, ScrewPostDiameter, ScrewDiameter, StrainReliefHeight, 0);
-			translate([-RearWallCableGapWidth, 0, 0])
-				rotate([180,0,0]) screwPost(StrainReliefHeight, ScrewPostDiameter, ScrewDiameter, StrainReliefHeight, 0);
-
-			translate([-RearWallCableGapWidth+ScrewPostDiameter/3, -(StrainReliefHeight-SKIN)/2, -(StrainReliefHeight-SKIN)])
-				cube([RearWallCableGapWidth+1, (StrainReliefHeight-SKIN), StrainReliefHeight-SKIN]); // 0.5mm to allow a bit space for the cable
-			translate([-RearWallCableGapWidth,-ScrewPostDiameter/2,-SKIN])
-				cube([RearWallCableGapWidth+ScrewPostDiameter, ScrewPostDiameter, SKIN]);
-		}
-		translate([ScrewPostDiameter,0,-SKIN]) hole(ScrewDiameter, SKIN);
-		translate([-RearWallCableGapWidth,0,-SKIN]) hole(ScrewDiameter, SKIN);
-	}
-}

@@ -23,6 +23,9 @@ IMPRINT = "MADE IN GERMANY";  // 30
 // Distance of the components (when showing 'exploded' elements)
 SEPARATION = 30; // [0: 1: 100]
 
+// Add cable strain-relief to top shell
+STRAIN_RELIEF = "yes"; // [no:No,yes:Yes]
+
 /* [Hidden] */
 // Use prototype cutouts to save filament?
 prototype = "no"; // [no:No,yes:Yes]

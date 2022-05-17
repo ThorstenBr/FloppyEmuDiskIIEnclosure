@@ -12,6 +12,17 @@ module imprint(x,y,z)
 	}
 }
 
+// cable strain relief (attached to the top shell)
+module makeTopCableStrainRelief(height)
+{
+	translate([ScrewPostDiameter, 0, 0])
+		rotate([180,0,0]) screwPost(height, ScrewPostDiameter+1, ScrewDiameter, height, 0);
+	translate([-RearWallCableGapWidth, 0, 0])
+		rotate([180,0,0]) screwPost(height, ScrewPostDiameter+1, ScrewDiameter, height, 0);
+	StrainReliefWidth=3;
+	translate([-RearWallCableGapWidth+ScrewPostDiameter/2, -StrainReliefWidth/2, -height])
+		cube([RearWallCableGapWidth, StrainReliefWidth, height]);
+}
 
 // little mounting point, so the base plate does not drop when glueing to the top shell
 module makeGlueHelper(Width)
@@ -47,6 +58,11 @@ module makeGlueMountingPoints()
 	{
 		union()
 		{
+			// strain relief, attached to the top shell (which is the most rigid structure)
+			if (STRAIN_RELIEF == "yes")
+				translate([BoxX_Width-RearWallGap-RearWallCableGapXOffset-7, BoxY_Height, BoxZ_Depth-RearWallZLedge-RearWallZOffset])
+					rotate([65+180,0,0]) makeTopCableStrainRelief(7);
+
 			for (z=[FrontZ, RearZ, (FrontZ+RearZ)/2])
 			{
 				// right
