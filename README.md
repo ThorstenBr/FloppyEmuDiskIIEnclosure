@@ -121,11 +121,13 @@ Eventually, when everything is connected, the whole assembly slides into the fro
 
 ![Assembly2](/resources/Assembly2.jpg?raw=true)
 
-The PCB, the front and the rear panel are fixed with screws from the bottom of the shell.
+The front panel and the rear-bracket of the PCB are fixed to the base plate with screws from the bottom of the shell.
 
 ![Assembly4](/resources/Assembly4.jpg?raw=true)
 
-Once the PCB/front-panel is installed, connect the disk drive ribbon cable and finally attach the rear panel - with two screws from the bottom.
+Once the PCB/front-panel is installed, connect the disk drive ribbon cable and use the printed cable bracket to attach the cable to the cable strain-relief at the top of the shell. This also guides the cable towards the cable slot in the rear-panel (photos above do not quite match: the cable strain-relief has since moved from the rear panel to the top of the shell).
+
+Finally attach the rear panel with two screws from the bottom.
 
 ![Assembly3](/resources/Assembly3.jpg?raw=true)
 
