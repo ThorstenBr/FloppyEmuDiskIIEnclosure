@@ -57,10 +57,16 @@ I suggest you solder all wires to a 2x5 pin header (or boxed header), so you can
 ![Wiring3](/resources/Wiring3.jpg?raw=true)
 
 ## 3D Print
-3D printing is straight forward. The models should be printed with their flat side facing downwards. Preferably use white or light gray filament for the top shell, base plate, and for the rear panel. Use black filament for the front panel and the buttons.
+3D printing is straight forward. The models should be printed with their flat side facing downwards.
+
+![3DPrint4](/resources/3D_Print4.jpg?raw=true)
+
+Preferably use white or light gray filament for the top shell, base plate, and for the rear panel. Use black filament for the front panel and the buttons.
 
 The models are optimized to reduce 3D "supports", however, the top shell and the front panel still need "supports" to be enabled when printing.
 The buttons should be printed without supports.
+
+![3DPrint5](/resources/3D_Print5.jpg?raw=true)
 
 The large grooves on the top shell do require supports though - since this model should be printed upside down:
 
@@ -73,10 +79,6 @@ Carefully remove the printed "supports" to reveal the top grooves:
 The rear panel and the front panel require supports - but only in tiny areas.
 
 ![3DPrint3](/resources/3D_Print3.jpg?raw=true)
-
-The buttons should be printed without supports.
-
-![3DPrint4](/resources/3D_Print4.jpg?raw=true)
 
 ### Print Duration
 The top shell takes about 7 hours to print on an Ender 3v2.
