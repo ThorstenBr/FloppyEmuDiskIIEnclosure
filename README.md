@@ -72,7 +72,8 @@ I suggest you solder all wires to a 2x5 pin header (or boxed header), so you can
 Preferably use white or light gray filament for the top shell, base plate, and for the rear panel. Use black filament for the front panel and the buttons.
 
 The models are optimized to reduce 3D "supports", however, the top shell and the front panel still need "supports" to be enabled when printing.
-The buttons should be printed without supports.
+
+The buttons should be printed without supports. Two brackets are also printed: a bracket for the PCB (feet to tbe attached to the PCB rear). And a bracket for the cable strain-relief (cable can be attached to a mount at the top/rear of the shell).
 
 ![3DPrint5](/resources/3D_Print5.jpg?raw=true)
 
