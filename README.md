@@ -57,7 +57,12 @@ I suggest you solder all wires to a 2x5 pin header (or boxed header), so you can
 ![Wiring3](/resources/Wiring3.jpg?raw=true)
 
 ## 3D Print
-3D printing is straight forward. The models are optimized to reduce 3D "supports". Most overhangs are designed, so most 3D printers will be able to print these without supports. The large grooves on the top shell do require supports though - since this model should be printed upside down:
+3D printing is straight forward. The models should be printed with their flat side facing downwards. Preferably use white or light gray filament for the top shell, base plate, and for the rear panel. Use black filament for the front panel and the buttons.
+
+The models are optimized to reduce 3D "supports", however, the top shell and the front panel still need "supports" to be enabled when printing.
+The buttons should be printed without supports.
+
+The large grooves on the top shell do require supports though - since this model should be printed upside down:
 
 ![3DPrint1](/resources/3D_Print1.jpg?raw=true)
 
@@ -65,14 +70,23 @@ Carefully remove the printed "supports" to reveal the top grooves:
 
 ![3DPrint2](/resources/3D_Print2.jpg?raw=true)
 
+The rear panel and the front panel require supports - but only in tiny areas.
+
+![3DPrint3](/resources/3D_Print3.jpg?raw=true)
+
+The buttons should be printed without supports.
+
+![3DPrint4](/resources/3D_Print4.jpg?raw=true)
 
 ### Print Duration
-The top shell takes about 7 hours to print on an Ender 3v2. The front and rear panel require about 1:15 hours. The buttons and mounting brackets require a few minutes only.
+The top shell takes about 7 hours to print on an Ender 3v2.
+The front and rear panel require about 1:30 hours.
+The buttons and mounting brackets require about 30 minutes.
 
 ## Assembly
 
 ### Shell
-The top shell and the base plate should be glued together. Make sure to completely cover the seam between these two elements, since these two parts were split for easier 3D printing, and the original Disk II does have different seams. Smoothing these seams (before applying beige "Apple II"-like paint) comepletely hides the seam. Glueing these two parts also provides extra strength: there should be no more wobble or flexing once the two parts are glued.
+The top shell and the base plate should be glued together. Make sure to completely cover the seam between these two elements, since these two parts were split for easier 3D printing, and the original Disk II does have different seams. Smoothing these seams (before applying beige "Apple II"-like paint - I used spray-paint) comepletely hides the seam. Glueing these two parts also provides extra strength: there should be no more wobble or flexing once the two parts are glued.
 
 ![3DPrint3](/resources/3D_Print3.jpg?raw=true)
 
