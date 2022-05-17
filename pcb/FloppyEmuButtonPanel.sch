@@ -236,7 +236,7 @@ L Connector_Generic:Conn_02x05_Odd_Even J1
 U 1 1 62826E2B
 P 4500 4350
 F 0 "J1" V 4596 4062 50  0000 R CNN
-F 1 "ButtonPanel" V 4505 4062 50  0000 R CNN
+F 1 "ButtonPanelConnector" V 4505 4062 50  0001 R CNN
 F 2 "ThorstensFootprints:Box_Header_2x05x2.54mm_Straight" H 4500 4350 50  0001 C CNN
 F 3 "~" H 4500 4350 50  0001 C CNN
 	1    4500 4350
@@ -257,12 +257,12 @@ Power LED is optional
 $Comp
 L Mechanical:MountingHole H2
 U 1 1 6283AD76
-P 2950 2150
-F 0 "H2" H 3050 2196 50  0000 L CNN
-F 1 "MountingHole" H 3050 2105 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 2950 2150 50  0001 C CNN
-F 3 "~" H 2950 2150 50  0001 C CNN
-	1    2950 2150
+P 2900 2100
+F 0 "H2" H 3000 2146 50  0000 L CNN
+F 1 "MountingHole" H 3000 2055 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 2900 2100 50  0001 C CNN
+F 3 "~" H 2900 2100 50  0001 C CNN
+	1    2900 2100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,18 +274,7 @@ F 1 "MountingHole" H 7100 2055 50  0000 L CNN
 F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 2100 50  0001 C CNN
 F 3 "~" H 7000 2100 50  0001 C CNN
 	1    7000 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 6283B47E
-P 7000 5150
-F 0 "H4" H 7100 5196 50  0000 L CNN
-F 1 "MountingHole" H 7100 5105 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 5150 50  0001 C CNN
-F 3 "~" H 7000 5150 50  0001 C CNN
-	1    7000 5150
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 $Comp
 L Mechanical:MountingHole H1
@@ -297,5 +286,16 @@ F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 2900 5150 50  0001 C CNN
 F 3 "~" H 2900 5150 50  0001 C CNN
 	1    2900 5150
 	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 6283B47E
+P 7000 5150
+F 0 "H4" H 7100 5196 50  0000 L CNN
+F 1 "MountingHole" H 7100 5105 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_3.2mm_M3" H 7000 5150 50  0001 C CNN
+F 3 "~" H 7000 5150 50  0001 C CNN
+	1    7000 5150
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
