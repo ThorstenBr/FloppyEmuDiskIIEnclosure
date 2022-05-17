@@ -36,6 +36,10 @@ The four push buttons are very common and easy to obtain. They are similar as th
 ![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
 ![PCB](/resources/PCB.png?raw=true)
 
+The pcb folder also contains Gerber files:
+![PCB](/resources/PCB2.png?raw=true)
+![PCB](/resources/PCB3.png?raw=true)
+
 ## Wiring FloppyEmu
 The FloppyEmu PCB does not provide convenient pins or solder pads to tap the button and LED status signals. However, it's still relatively easy to tap the required signals - as shown by these photos. The photos apply to the Revision C model of the BMOW FloppyEmu. For other revisions, better verify the wiring with a multimeter.
 
