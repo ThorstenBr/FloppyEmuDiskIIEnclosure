@@ -25,15 +25,23 @@ You can also find a ready-to-use STL files in the [stl](/stl/) folder. These STL
 ![3D-Design3](/resources/3D_Design3.png?raw=true)
 
 ## Button Panel
-You will also need a button panel, so you can control FloppyEmu from the front panel. You can create the panel using a perfboard - or use the PCB design files to order a printed circuit board.
+You will need a button panel, so you can control FloppyEmu from the front.
+You can build the panel manually using a perfboard. Alternatively, use the PCB design files to order a printed circuit board.
 You'll find schematics and also a KiCad PCB design project in the [pcb](/pcb/) folder.
+There are also Gerber files in the pcb folder.
 
 The four push buttons are very common and easy to obtain. They are similar as the onboard buttons of FloppyEmu. Except the PCB design is made for a through-hole type push buttons (not SMD buttons as on FloppyEmu). And you will need switches with a 7mm peg, to properly mount the printed push button caps. Check on ebay searching for "micro switch push button 6x6x7mm". Your favourite electronics supplier should also have them (Germany: reichelt.de, TASTER 9303, Kurzhubtaster 6x6mm, 7,0mm).
 
 ![ButtonPanel1](/resources/ButtonPanel1.png?raw=true)
 ![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
 ![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
+
+KiCad schematics are available in the pcb folder:
+
 ![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
+
+KiCad PCB design:
+
 ![PCB](/resources/PCB.png?raw=true)
 
 The pcb folder also contains Gerber files, if you wanted to order a PCB directly:
