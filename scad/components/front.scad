@@ -102,8 +102,8 @@ module buttonPanelSupports()
 	for (x = [2 : 1: 2])
 	for (y = [0 : 2: 2])
 	{
-		echo("Button Panel mount (x/y):",ButtonXSpacing*x, ButtonYSpacing*y);
-		translate([XOfs+ButtonXSpacing*x, YOfs-ButtonYSpacing*y, SKIN])
+		echo("Button Panel mount (x/y):",ButtonXSpacing*x-ButtonRaster*3, ButtonYSpacing*y);
+		translate([XOfs+ButtonXSpacing*x-ButtonRaster*3, YOfs-ButtonYSpacing*y, SKIN])
 			screwPost(ButtonScrewPostHeight, ScrewPostDiameter, ScrewDiameter, ButtonScrewPostHeight, 0.5);
 	}
 }
