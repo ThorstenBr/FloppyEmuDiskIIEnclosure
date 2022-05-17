@@ -49,6 +49,31 @@ The pcb folder also contains Gerber files, if you wanted to order a PCB directly
 ![PCB](/resources/PCB2.png?raw=true)
 ![PCB](/resources/PCB3.png?raw=true)
 
+### Bill Of Materials
+
+Here's what you need.
+
+For the button panel:
+
+- Manufactured PCB (i.e. upload the Gerber-Files to a PCB manufacturer, like JLCPCB). Alternatively use a [perfboard](https://en.wikipedia.org/wiki/Perfboard).
+- 4x "micro switch push button 6x6x7mm" (ebay etc)
+- 1x 3mm LED (red)
+- 1x resistor (value depends on the type and intensity of your LED, usually 330 Ohm to 1KOhm)
+
+For the button panel connector:
+- 2x "2x5 box header" or, alternatively, 2x "2x5 straight pin header"
+- 2x "2x5 header plugs"
+- 10cm (8") of 10 wire ribbon cable
+
+Alternatively you could just run 7 individual wires to connect the button panel to the PCB. But of course, it's neater to use the box headers and ribbon cable.
+
+For the LCD connector:
+- 2x 2x8 header plugs
+- 1x8 pin strip
+- 10cm (8") of 16 wire ribbon cable
+
+Again, alternatively you could just run 7 individual wires from the LCD to the FloppyEMU LCD connector plug. But it's much neater to use a ribbon cable and connector plugs. The pin strip is used as an adapter, so you can attach the header plug into the FloppyEMU.
+
 ## Wiring FloppyEmu
 The FloppyEmu PCB does not provide convenient pins or solder pads to tap the button and LED status signals. However, it's still relatively easy to tap the required signals - as shown by these photos. The photos apply to the Revision C model of the BMOW FloppyEmu. For other revisions, better verify the wiring with a multimeter.
 
