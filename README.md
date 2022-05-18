@@ -44,6 +44,7 @@ Schematics and the KiCad project for the PCB are also stored in [pcb](/pcb/) fol
 
 ![PCB](/resources/PCB.png?raw=true)
 
+The button PCB is eventually screwed to the front panel (note: the photo does not show the latest design. The PCB is now fixed with 4 screws, one in each corner - see PCB design above).
 
 ![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
 
