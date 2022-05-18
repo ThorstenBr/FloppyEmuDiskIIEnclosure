@@ -61,7 +61,7 @@ For the button panel:
 - 1x resistor (value depends on the type and intensity of your LED, usually 330 Ohm to 1KOhm)
 - "2x5 box header" or, alternatively, "2x5 straight pin header"
 
-![Material1](/resources/Material1.jpg?raw=true)
+![Material1](/resources/Material1.png?raw=true)
 
 For the button panel and LCD connector:
 - You can use simple breadboard wires to connect FloppyEmu to the button panel and LCD. They are cheap and also come with a ribbon cable. The LCD and the button panel both require 7 wires each (since 3 pins of the button panel's pin header are unused).
