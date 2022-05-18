@@ -64,11 +64,11 @@ For the button panel:
 ![Material1](/resources/Material1.png?raw=true)
 
 For the button panel and LCD connector:
-- You can use simple breadboard wires to connect FloppyEmu to the button panel and LCD. They are cheap and also come with a ribbon cable. The LCD and the button panel both require 7 wires each (since 3 pins of the button panel's pin header are unused).
+- You can use simple breadboard wires ("jumper wires") to connect FloppyEmu to the button panel and LCD. They are cheap and also come with a ribbon cable. The LCD and the button panel both require 7 wires each (since 3 pins of the button panel's pin header are unused).
 
 - Alternatively, use "header plugs" with matching ribbon cable (2x5 for the button panel, 2x8 for the LCD) - as shown in the build photos. This is a slightly more expensive and complex solution. 
 
-![Material1](/resources/Material2.jpg?raw=true)
+![Material2](/resources/Material2.png?raw=true)
 
 ## Wiring FloppyEmu
 The FloppyEmu PCB does not provide convenient pins or solder pads to tap the button and LED status signals. However, it's still relatively easy to tap the required signals - as shown by these photos. The photos apply to the Revision C model of the BMOW FloppyEmu. For other revisions, better verify the wiring with a multimeter.
