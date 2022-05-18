@@ -66,14 +66,14 @@ ScrewPostHeight = 5;
 ScrewPostFillet = 2;
 
 // Display
-DisplayWidth = 30+1+1;  // active area: 29.42
-DisplayHeight = 15+1+2; // active area: 14.7
+DisplayWidth = (LCD == "large") ? 55.01+2 : 30+2;  // active area: 29.42
+DisplayHeight = (LCD == "large") ? 27.5+2 : 15+3; // active area: 14.7
 DisplayXDistance = 15*ScalingFactor; // distance from the left of the panel
 DisplayYDistance = 3.5+9*ScalingFactor; // distance from the top of the panel
 DisplayCornerRadius = 2;
-DisplayPegXDistance = 31-0.2;
-DisplayPegYDistance = 28.5;
-DisplayPegYOffset = 2.25;//-4.5; // 7.35-2=5.35 from the top, 3.25 The display mounting ports are not centered, but have an offset (shifted towards the bottom).
+DisplayPegXDistance = (LCD == "large") ? 72.0 : (31.0-0.2);
+DisplayPegYDistance = (LCD == "large") ? 38.8 : 28.5;
+DisplayPegYOffset = (LCD == "large") ? 2.64 : 2.25; // from the top. The display mounting ports are not centered, but have an offset (shifted towards the bottom).
 
 // frame around the display opening
 DisplayFrameZHeight = 0.5;

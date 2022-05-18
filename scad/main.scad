@@ -5,7 +5,7 @@
 PART = "bottom"; // [button:Buttons and Brackets, bottom:Base board element, top:Top shell, rear:Rear panel, front:Front panel, test:--Test--, all:All elements, noRear:All except the rear panel, noFront:All except front panel, noBottom: All except base board, frontBottom: Front and base board only, topBottom: Top shell and base board only]
 
 // Size of the LCD display?
-LCD = "yes"; // [small:Original 1.7inch display, large:Custom large 2.42inch display]
+LCD = "small"; // [small:Original 1.7inch display, large:Jumbo 2.42inch display]
 
 // show FloppyEmu PCB?
 PCB = "no"; // [no:No,yes:Yes]
