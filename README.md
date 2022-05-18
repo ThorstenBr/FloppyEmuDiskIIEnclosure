@@ -155,3 +155,8 @@ Almost done!
 But remember: it's not complete... without rubber feet... :)
 
 ![Assembly5](/resources/Assembly5.jpg?raw=true)
+
+Done! :)
+
+And btw, check the [sticker](/sticker/) folder for a collection of stickers to decorate your device.
+The designs are also available as GIMP image files (.xcf), so you can adapt the text to your needs.
