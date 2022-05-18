@@ -26,34 +26,32 @@ You can also find a ready-to-use STL files in the [stl](/stl/) folder. These STL
 
 ## Button Panel
 You will need a button panel, so you can control FloppyEmu from the front.
-You can build the panel manually using a perfboard. Alternatively, use the PCB design files to order a printed circuit board.
-You'll find schematics and also a KiCad PCB design project in the [pcb](/pcb/) folder.
-There are also Gerber files in the pcb folder.
+You can build the panel manually using a perfboard or order a printed circuit board (from JLCPCB etc).
 
-The four push buttons are very common and easy to obtain. They are similar as the onboard buttons of FloppyEmu. Except the PCB design is made for a through-hole type push buttons (not SMD buttons as on FloppyEmu). And you will need switches with a 7mm peg, to properly mount the printed push button caps. Check on ebay searching for "micro switch push button 6x6x7mm". Your favourite electronics supplier should also have them (Germany: reichelt.de, TASTER 9303, Kurzhubtaster 6x6mm, 7,0mm).
-
-![ButtonPanel1](/resources/ButtonPanel1.png?raw=true)
-![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
-![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
-
-KiCad schematics are available in the pcb folder:
-
-![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
-
-KiCad PCB design:
-
-![PCB](/resources/PCB.png?raw=true)
-
-The pcb folder also contains Gerber files, if you wanted to order a PCB directly:
+The [pcb](/pcb/) folder contains all Gerber files required for a PCB order:
 
 ![PCB](/resources/PCB2.png?raw=true)
 ![PCB](/resources/PCB3.png?raw=true)
+
+Alternatively, use a perfboard to solder the push buttons manually. It's only 4 buttons and a connector (and maybe the resistor for the status LED):
+
+![ButtonPanel1](/resources/ButtonPanel1.png?raw=true)
+![ButtonPanel2](/resources/ButtonPanel2.png?raw=true)
+
+Schematics and the KiCad project for the PCB are also stored in [pcb](/pcb/) folder:
+
+![ButtonPanel4](/resources/ButtonPanel4.png?raw=true)
+
+![PCB](/resources/PCB.png?raw=true)
+
+
+![ButtonPanel3](/resources/ButtonPanel3.jpg?raw=true)
 
 ### Bill Of Materials
 
 Here's what you need.
 
-For the button panel:
+#### For the button panel:
 
 - Manufactured PCB (i.e. upload the Gerber-Files to a PCB manufacturer, like JLCPCB). Alternatively use a [perfboard](https://en.wikipedia.org/wiki/Perfboard).
 - 4x "micro switch push button 6x6x7mm" (ebay etc)
@@ -63,7 +61,9 @@ For the button panel:
 
 ![Material1](/resources/Material1.png?raw=true)
 
-For the button panel and LCD connector:
+The four push buttons are very common and easy to obtain. They are similar as the onboard buttons of FloppyEmu. Except the PCB design is made for a through-hole type push buttons (not SMD buttons as on FloppyEmu). Switches with a 7mm peg are required to properly mount the printed button caps. Check on ebay searching for "micro switch push button 6x6x7mm". Your favourite electronics supplier should also have them (Germany: reichelt.de, TASTER 9303, Kurzhubtaster 6x6mm, 7,0mm).
+
+#### For the button panel and LCD connector:
 - You can use simple breadboard wires ("jumper wires") to connect FloppyEmu to the button panel and LCD. They are cheap and also come with a ribbon cable. The LCD and the button panel both require 7 wires each (since 3 pins of the button panel's pin header are unused).
 
 - Alternatively, use "header plugs" with matching ribbon cable (2x5 for the button panel, 2x8 for the LCD) - as shown in the build photos. This is a slightly more expensive and complex solution. 
@@ -105,10 +105,6 @@ The large grooves on the top shell do require supports though - since this model
 Carefully remove the printed "supports" to reveal the top grooves:
 
 ![3DPrint2](/resources/3D_Print2.jpg?raw=true)
-
-The rear panel and the front panel require supports - but only in tiny areas.
-
-![3DPrint3](/resources/3D_Print3.jpg?raw=true)
 
 ### Print Duration
 The top shell takes about 7 hours to print on an Ender 3v2.
