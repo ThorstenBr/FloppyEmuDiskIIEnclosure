@@ -1,6 +1,8 @@
 # FloppyEmu Disk II Enclosure
 This project contains OpenSCAD files, STL files, stickers and KiCad PCB to create a 3D-printed custom enclosure for the [Big Mess of Wires - FloppyEmu](https://www.bigmessowires.com/floppy-emu/) - an SD-card based disk drive emulator for the Apple II computer. The custom enclosure is a look-alike of the historic "Disk II" drive, Apple's first and hugely successful original disk drive for the Apple II, introduced in 1978.
 
+As a bonus, this project also contains a housing for the Floppy Emu DB-19 plug adapter - a separate little 3D-print to protect the adapter (see "Bonus" section below).
+
 ![Final1](/resources/Final1.jpg?raw=true)
 ![Final2](/resources/Final2.jpg?raw=true)
 
@@ -158,5 +160,25 @@ But remember: it's not complete... without rubber feet... :)
 
 Done! :)
 
-And btw, check the [sticker](/sticker/) folder for a collection of stickers to decorate your device.
+## Stickers
+By the way, check the [sticker](/sticker/) folder for a collection of stickers to decorate your device.
+Several variants of the rear sticker are provided.
 The designs are also available as GIMP image files (.xcf), so you can adapt the text to your needs.
+
+## Bonus: Floppy Emu DB-19 adapter housing
+
+The Floppy Emu DB-19 adapter is provided as a bare PCB only. It is usually connected to the back of your Apple II and rarely touched. However, you should still be careful with the adapter since the pins carry the +5V rail and also the +/- 12V rails. Since Disk II cable has the +/-12V rails connected to pins which are directly next to disk control and read/write signals (TTL/5V logic). A shortcut between these pins could easily damage the disk controller, the Apple II, or FloppyEmu (or all of them):
+
+![PlugAdapter0](/resources/PlugAdapter0.jpg?raw=true)
+
+The 3D-printed plug adapter housing provides proper protection for the adapter. The adapter PCB slides right into the bottom part of the housing:
+
+![PlugAdapter1](/resources/PlugAdapter1.jpg?raw=true)
+
+The top is printed with some notches, so it snaps right into place - and firmly holds the adapter PCB/plug:
+
+![PlugAdapter2](/resources/PlugAdapter2.jpg?raw=true)
+![PlugAdapter3](/resources/PlugAdapter3.jpg?raw=true)
+
+The result is a fairly bulky plug, but that's due to the clunky nature of the "_PCB-box header-header plug-ribbon cable_" assembly.
+

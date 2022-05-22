@@ -1,3 +1,18 @@
 This folder contains the small sized variant of the FloppyEmu Disk II enclosure. It's 60% of the size of the original Disk II.
 It's just big enough to hold the FloppyEmu PCB.
-The front panel holds the FloppyEmu's orginal LCD, a single 3mm LED (drive status) and the button panel.
+The front panel holds the FloppyEmu's orginal 1.7" LCD, a single 3mm LED (drive status) and the button panel.
+
+Hints for printing:
+* The models should be printed with their flat side facing downwards.
+* Preferably use white or light gray filament for the top shell, base plate, and for the rear panel.
+* Use black filament for the front panel and the buttons.
+* The models are optimized to reduce 3D "supports", however, the top shell and the front panel still need "supports" to be enabled when printing.
+* The buttons/brackets and base-plate print without "supports".
+* The infill setting doesn't matter (design does not contain any large filled volumes).
+* The design printed fine with an Ender 3v2 printer, sliced with Ultimaker Cura using stock settings.
+
+Printing Duration (estimates for an Ender 3v2):
+* Top shell: about 7 hours.
+* Front and rear panel: about 1:30 hours.
+* Buttons and mounting brackets: about 30 minutes.
+

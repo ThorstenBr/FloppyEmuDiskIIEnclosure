@@ -1,0 +1,8 @@
+Housing for Floppy Emu's DB-19 plug adapter.
+
+Hints for printing:
+* The models should be printed with their flat side facing downwards.
+* Prints without supports.
+* There are some bulky volumes to firmly hold the plug. I used Cura's stock infill setting (20%).
+* The design printed fine with an Ender 3v2 printer, sliced with Ultimaker Cura using stock settings.
+* Priting duration is about 2:10 hours (with Ender 3v2).

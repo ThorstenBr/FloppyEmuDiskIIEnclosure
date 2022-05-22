@@ -1,0 +1,7 @@
+This folder contains the full-sized variant of the FloppyEmu Disk II enclosure. It's at 1:1 scale of the original Disk II.
+The full-sized box should be used with a 5mm LED and a custom 2.42" LCD display (128x64 pixels, SSD1309).
+If you want to use the original 1.7" LCD of FloppyEmu then it's recommended to use the small (60%) box.
+
+TBD: The 1:1 scaled design is currently untested. Hence, STL files are not yet provided. You could still generate the
+full-scaled STL by using the SCAD files (OpenSCAD). However, the full-scaled variant of the design will most certainly
+still require tweaking. Otherwise come back in a few months or so, to check on the status of the full-scaled variant...

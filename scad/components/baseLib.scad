@@ -55,7 +55,7 @@ module rcube(size=[30, 20, 10], radius=[3, 2, 1], center=true)
                            y * ( size[1] - 2*radius[1]),
                            z * ( size[2] - 2*radius[2])])
                     scale([radius[0], radius[1], radius[2]])
-                        if (quality == "high") sphere(1.0,$fn=4*4*2); else sphere(1.0,$fn=4);
+                        if (QUALITY == "high") sphere(1.0,$fn=4*4*2); else sphere(1.0,$fn=4);
         }
     }
 }
