@@ -10,13 +10,13 @@ SKIN = 1.0; // [1: 0.1: 5]
 /* [Hidden] */
 
 // Width (X) of the box
-BoxX_Width = 155*ScalingFactor; // [60: 145]
+BoxX_Width = 155.5*ScalingFactor; // [60: 145]
 
 // Height (Y) of the box
-BoxY_Height = 90*ScalingFactor; // [10: 100]
+BoxY_Height = 91*ScalingFactor; // [10: 100]
 
 // Depth (Z) of the box
-BoxZ_Depth = 210*ScalingFactor; // [10: 200]
+BoxZ_Depth = 219*ScalingFactor; // [10: 200]
 
 // Width of the ventilation cut
 VentilationWidth   =  4*ScalingFactor;
@@ -146,7 +146,10 @@ module main()
 	{
 		for (x = [0,1])
 		for (y = [0,1])
-			translate([x*ButtonXSpacing, y*ButtonYSpacing, -ButonZDepth]) button();
+			if ((x!=0)||(y!=0))
+				translate([x*ButtonXSpacing, y*ButtonYSpacing, -ButonZDepth]) button();
+			else
+				translate([x*ButtonXSpacing, y*ButtonYSpacing, -ButonZDepth]) resetButton();
 		translate([-15, 20, 0]) rotate([0,0,90]) makeCableStrainRelief();
 		translate([30, -15, 0]) makeRearPcbFeet();
 	}

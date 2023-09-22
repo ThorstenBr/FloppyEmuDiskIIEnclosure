@@ -16,6 +16,22 @@ module button()
 	rotate([0,180,0]) screwPost(ButtonPegDepth, ButtonPegDiameter+2, ButtonPegDiameter, ButtonPegDepth, 1);
 }
 
+// single round/reset button
+module resetButton()
+{
+	$fn = 30;
+
+	// front part of the button
+	translate([0, 0, 0])
+		cylinder(r=(ButtonXWidth-3)/2, ButonZDepth);
+
+	// slightly larger frame around the buttons rear, to keep the button from falling through the panel
+	cylinder(r=(ButtonXWidth-3+ButtonLedgeWidth)/2, SKIN);
+
+	// connector for the button's peg
+	rotate([0,180,0]) screwPost(ButtonPegDepth, ButtonPegDiameter+2, ButtonPegDiameter, ButtonPegDepth, 1);
+}
+
 module makeCableStrainRelief()
 {
 	StrainReliefHeight=4+SKIN;

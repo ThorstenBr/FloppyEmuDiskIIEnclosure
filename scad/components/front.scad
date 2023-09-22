@@ -13,6 +13,16 @@ module buttonCutout()
 		roundedCube(buttonXWidth, buttonYHeight, SKIN, ButtonCorners);
 }
 
+// front panel hole for a round button
+module resetButtonCutout()
+{
+	// add 1mm spacing, so the button moves freely (results in 0.5mm clearance on each side)
+	buttonWidth = ButtonXWidth-3+0.5;
+
+	$fn = 20;
+	cylinder(r=buttonWidth/2, SKIN);
+}
+
 // test / unused
 module buttonFrame()
 {
@@ -56,7 +66,7 @@ module panelCutouts()
 		{
 			translate([ButtonXOfs+ButtonXWidth/2+(ButtonXSpacing)*x, 
 				   BoxY_Height-ButtonYHeight/2-ButtonYOfs-(ButtonYSpacing)*y, 0])
-				buttonCutout();
+				resetButtonCutout();
 		}
 	}
 
