@@ -165,6 +165,8 @@ By the way, check the [sticker](/sticker/) folder for a collection of stickers t
 Several variants of the rear sticker are provided.
 The designs are also available as GIMP image files (.xcf), so you can adapt the text to your needs.
 
+The stickers are now also available in high quality [here](/sticker/HighQuality). Many thanks to [khaibitgfx](https://www.applefritter.com/khaibitgfx)!
+
 ## Bonus: Floppy Emu DB-19 adapter housing
 
 The Floppy Emu DB-19 adapter is provided as a bare PCB only. It is usually connected to the back of your Apple II and rarely touched. However, you should still be careful with the adapter since the pins carry the +5V rail and also the +/- 12V rails. Since Disk II cable has the +/-12V rails connected to pins which are directly next to disk control and read/write signals (TTL/5V logic). A shortcut between these pins could easily damage the disk controller, the Apple II, or FloppyEmu (or all of them):
